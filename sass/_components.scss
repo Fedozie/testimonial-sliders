@@ -1,0 +1,152 @@
+.wrapper{
+
+
+    &__main{
+        background: url("../images/pattern-bg.svg") no-repeat;
+        background-size: 40%;
+        background-position: 21rem 1.4rem;
+
+        @media only screen and (max-width: $bp-larger) {
+            background-position: 20rem 3rem;
+        } 
+    }
+}
+
+.testimonial{
+    //display: none;
+
+    &__container{
+        
+        @media only screen and (max-width: $bp-large) {
+            // width: 100%;
+            // position: relative;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+    }
+
+    &__profile{
+       
+        
+        @media only screen and (max-width: $bp-large) {
+            margin-bottom: 10rem;
+            
+        }
+    }
+
+    &__image{
+        width: 30%;
+        border-radius: 5px;
+        position: absolute;
+        right: 5rem;
+        top: 3rem;
+
+        @media only screen and (max-width: $bp-larger) {
+            right: 2rem;
+            top: 5rem;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            position: absolute;
+            right: 10rem;
+            top: 2rem;
+            
+        }
+    }
+
+    &__text{
+        width: 50%;
+        position: absolute;
+        top: 7rem;
+        left: 5rem;
+        background: url("../images/pattern-quotes.svg") no-repeat;
+        background-position: 35px 0px;
+        padding: .5rem;
+    }
+
+    &__heading{
+        font-size: 1rem;
+        font-weight: 300;
+        color: var(--dark-blue);
+        opacity: .95;
+    }
+
+    &__title{
+        font-size: .3rem;
+        margin-top: .8rem;
+
+        & > *{
+            display: inline-block;
+        }
+
+        h2 {
+            color: var(--dark-blue);
+        }
+
+        :first-child{
+            margin-right: 2px;
+        }
+
+        :nth-child(2){
+            color: var(--light-blue);
+            opacity: .8;
+        }
+    }
+}
+
+.button{
+    width: 3rem;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    bottom: 3.3rem;
+    right: 13.5rem;
+
+    @media only screen and (max-width: $bp-larger){
+        bottom: 3.5rem;
+        right: 9rem;
+    }
+
+    &__prev, &__next{
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: inherit;
+        transition: 0.5s all ease;
+
+        img{
+           width: 12px;
+           height: 18px;
+        }
+    }
+
+    &__prev:hover, &__next:hover{
+        background-color: hsl(240, 18%, 85%);
+    }
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
