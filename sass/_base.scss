@@ -9,8 +9,10 @@
 }
 
 $bp-largest: 75em; //1200px / default font-size
-$bp-larger: 62.5em; //1000px / default font-size
-$bp-large: 48em; //768px / default font-size
+$bp-large: 62.5em; //1000px / default font-size
+$bp-medium: 56.25em; //900px / default font-size
+$bp-small: 37.5em;  //600px / default font-size
+$bp-smallest: 29.375em;   //470px / default font-size
 
 *, *::before, *::after{
     margin: 0;
@@ -26,8 +28,16 @@ html{
         font-size: 160%;
     }
 
-    @media only screen and (max-width: $bp-larger) {
-        
+    @media only screen and (max-width: $bp-large) {
+        font-size: 140%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 120%;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        font-size: 100%;
     }
 }
 
@@ -37,9 +47,9 @@ body{
     position: relative;
 
 
-    @media only screen and (max-width: $bp-larger) {
-        height: 100%;
-    } 
+    // @media only screen and (max-width: $bp-large) {
+    //     height: 100%;
+    // } 
 
     ::after{
         content: '';

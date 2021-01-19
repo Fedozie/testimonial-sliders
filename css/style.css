@@ -15,14 +15,20 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 160%; } }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 140%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 120%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 100%; } }
 
 body {
   background-color: var(--base);
   font-family: var(--font-type);
   position: relative; }
-  @media only screen and (max-width: 62.5em) {
-    body {
-      height: 100%; } }
   body ::after {
     content: '';
     position: absolute;
@@ -35,18 +41,20 @@ body {
   background-position: 21rem 1.4rem; }
   @media only screen and (max-width: 62.5em) {
     .wrapper__main {
-      background-position: 20rem 3rem; } }
+      background-position: 22.5rem 2.3rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .wrapper__main {
+      background-position: 23.5rem 2.3rem; } }
 
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 62.5em) {
   .testimonial__container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; } }
+    justify-content: space-between;
+    align-items: center; } }
 
-@media only screen and (max-width: 48em) {
-  .testimonial__profile {
-    margin-bottom: 10rem; } }
+@media only screen and (max-width: 37.5em) {
+  .testimonial__container {
+    flex-direction: column; } }
 
 .testimonial__image {
   width: 30%;
@@ -56,13 +64,12 @@ body {
   top: 3rem; }
   @media only screen and (max-width: 62.5em) {
     .testimonial__image {
-      right: 2rem;
-      top: 5rem; } }
-  @media only screen and (max-width: 48em) {
+      right: 3rem;
+      top: 3.5rem; } }
+  @media only screen and (max-width: 37.5em) {
     .testimonial__image {
-      position: absolute;
-      right: 10rem;
-      top: 2rem; } }
+      top: 5rem;
+      right: 3rem; } }
 
 .testimonial__text {
   width: 50%;
@@ -102,12 +109,21 @@ body {
   align-items: center;
   overflow: hidden;
   position: absolute;
-  bottom: 3.3rem;
+  bottom: 4.3rem;
   right: 13.5rem; }
+  @media only screen and (max-width: 75em) {
+    .button {
+      width: 3.5rem;
+      height: 2rem; } }
   @media only screen and (max-width: 62.5em) {
     .button {
-      bottom: 3.5rem;
+      bottom: 4.5rem;
       right: 9rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .button {
+      width: 5rem;
+      height: 2.5rem;
+      bottom: 3rem; } }
   .button__prev, .button__next {
     text-decoration: none;
     width: 100%;
@@ -137,6 +153,11 @@ body {
   margin: 2.5rem 1.5rem 0 1.5rem;
   position: relative;
   height: 20rem; }
+  @media only screen and (max-width: 29.375em) {
+    .wrapper__main {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; } }
 
 .attribution {
   font-size: 11px;
@@ -147,3 +168,9 @@ body {
     text-decoration: none; }
     .attribution a:hover {
       color: var(--dark-blue); }
+
+.john, .hide {
+  display: none; }
+
+.unhide {
+  display: visible; }

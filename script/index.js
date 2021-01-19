@@ -1,24 +1,19 @@
-// var slideIndex = 1;
-// showSlides(slideIndex);
 
-// //Next/Previous Controls
-// const plusSides = (n) => {
-//     showSlides(slideIndex += n);
-// }
+// const prevButton = document.querySelector('.button__prev');
+// const nextButton = document.querySelector('.button__next');
+// const img = document.querySelector('.testimonial__profile');
+// const writeup = document.querySelector('.testimonial__heading');
 
-// const showSlides = (n) => {
-//     var i;
-//     var slides = document.getElementsByClassName("testimonial");
-//     if(n > slides.length) {
-//         slideIndex = 1;
-//     }
-//     if(n < 1) {
-//         slideIndex = slides.length;
-//     }
-//     for(i = 0; i < slides.length; i++){
-//         slides[i].style.display = "none";
-//     }
-//     slides[slideIndex - 1].style.display = "block";
-// }
+// nextButton.addEventListener('click', function(e){
+//     console.log('John')
+
+//     e.preventDefault()
+// })
+
+// prevButton.addEventListener('click', function(e){
+//     console.log('Tanya')
+    
+//     e.preventDefault()
+// })
 
 

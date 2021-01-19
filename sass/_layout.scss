@@ -1,10 +1,17 @@
 .wrapper{
+    
 
     &__main{
         background-color: white;
         margin: 2.5rem 1.5rem 0 1.5rem;
         position: relative;
         height: 20rem;
+
+        @media only screen and (max-width: $bp-smallest){
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
     }
 }
 
@@ -12,7 +19,6 @@
     font-size: 11px;
     text-align: center;
     margin-top: .5rem;
-    
 
     a{
         color: hsl(228, 45%, 44%); 
@@ -22,4 +28,12 @@
             color: var(--dark-blue);
         }
     }
+}
+
+.john, .hide{
+    display: none;
+}
+
+.unhide{
+    display: visible;
 }
