@@ -1,4 +1,4 @@
-//Varibles Declarations
+//Variables Declarations
 const prevButton = document.querySelector('.button__prev');
 const nextButton = document.querySelector('.button__next');
 const tanyaTestimonial = document.querySelector('.tanya');
