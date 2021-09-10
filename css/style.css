@@ -148,6 +148,12 @@ body {
   to {
     opacity: 1; } }
 
+.hide {
+  display: none; }
+
+.unhide {
+  display: visible; }
+
 .wrapper__main {
   background-color: white;
   margin: 2.5rem 1.5rem 0 1.5rem;
@@ -168,9 +174,3 @@ body {
     text-decoration: none; }
     .attribution a:hover {
       color: var(--dark-blue); }
-
-.john, .hide {
-  display: none; }
-
-.unhide {
-  display: visible; }

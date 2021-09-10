@@ -1,19 +1,19 @@
+//Varibles Declarations
+const prevButton = document.querySelector('.button__prev');
+const nextButton = document.querySelector('.button__next');
+const tanyaTestimonial = document.querySelector('.tanya');
+const johnTestimonial = document.querySelector('.john')
 
-// const prevButton = document.querySelector('.button__prev');
-// const nextButton = document.querySelector('.button__next');
-// const img = document.querySelector('.testimonial__profile');
-// const writeup = document.querySelector('.testimonial__heading');
+prevButton.addEventListener('click', (e) => {
+    tanyaTestimonial.classList.toggle('hide');
+    johnTestimonial.classList.toggle('hide');
 
-// nextButton.addEventListener('click', function(e){
-//     console.log('John')
+    e.preventDefault();
+})
 
-//     e.preventDefault()
-// })
+nextButton.addEventListener('click', (e) => {
+    tanyaTestimonial.classList.toggle('hide');
+    johnTestimonial.classList.toggle('hide');
 
-// prevButton.addEventListener('click', function(e){
-//     console.log('Tanya')
-    
-//     e.preventDefault()
-// })
-
-
+    e.preventDefault();
+})
